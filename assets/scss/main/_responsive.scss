@@ -1,0 +1,144 @@
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 991.98px) {
+    /*--
+    - Home
+    -----------------------------------------*/
+    .home{
+        flex-direction: column;
+
+        .my-story{
+            height: 60%;
+
+            .bg-img{
+            
+                &::before{
+                    background-image: linear-gradient(180deg, rgba(197,222,158,0.3) 0%, rgba(197,222,158,1) 100%);
+                }
+
+                h1{
+                    bottom: 10%;
+                    transform: translate(50%, 50%);
+                }
+            }
+        }
+        
+        .news{
+
+            .bg-img{
+            
+                &::before{
+                    background-image: linear-gradient(180deg, rgba(126,224,129,0.3) 0%, rgba(126,224,129,1) 100%);
+                }
+            }
+
+            .details{
+                background-color: rgba(126,224,129,1);
+            }
+        }
+
+        .blog{
+
+            .bg-img{
+
+                &::before{
+                    background-image: linear-gradient(180deg, rgba(124,223,127,0.5) 0%, rgba(107,219,111,1) 100%);
+                }
+            }
+
+            .details{
+                background-color: rgba(107,219,111,1);
+            }
+        }
+
+        .gallery{
+
+            .bg-img{
+            
+                &::before{
+                    background-image: linear-gradient(180deg, rgba(91,215,95,0.6) 0%, rgba(91,215,95,1) 100%);
+                }
+            }
+        }
+
+        .videos{
+
+            .bg-img{
+
+                &::before{
+                    background-image: linear-gradient(180deg, rgba(91,215,95,0.8) 0%, rgba(91,215,95,1) 100%);
+                }
+            }
+        }
+    }
+
+    .my-story,
+    .news,
+    .blog,
+    .gallery,
+    .videos{
+        flex-direction: column;
+        width: 100% !important;
+        height: 10%;
+    }
+
+    .bg-img{
+        height: 100%;
+        padding: 20px !important;
+
+        h1{
+            bottom: 50%;
+            right: 50%;
+            font-size: 24px;
+            writing-mode: lr;
+            transform: rotate(0);
+            transform: translate(50%, 80%);
+        }
+    }
+
+    .swiper-slide{
+
+        h5{
+            display: none;
+        }
+    }
+
+    .fixed-info{
+        bottom: 5px;
+        width: 150px;
+    
+        h1{
+            font-size: 24px;
+        }
+    
+        p{
+            font-size: 12px;
+        }
+    
+        .copyright{
+            display: none;
+        }
+
+        .social-links{
+            margin-bottom: 15px;
+            
+            li{
+        
+                i{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .copyright.sm{
+        display: block;
+        
+        p{
+            float: right;
+            font-size: 12px;
+        }
+    }
+}
